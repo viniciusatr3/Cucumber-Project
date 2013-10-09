@@ -1,6 +1,6 @@
 class BasicsController < ApplicationController
-  before_action :set_basic, only: [:show, :edit, :update, :destroy]
-
+  before_filter :authenticate_user!
+  
   # GET /basics
   # GET /basics.json
   def index

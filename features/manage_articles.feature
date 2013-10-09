@@ -6,10 +6,9 @@ Feature: Manage Articles
   Background: Create User
     Given I am a user email "vinicius.cocao@do.com" and password "123456789"
     When I go to the login page
-    And I fill in email with "vinicius.cocao@do.com"
-    And I fill in password with "123456789"
+    And I fill in "Email" with "vinicius.cocao@do.com"
+    And I fill in "Password" with "123456789"
     And I press "Sign in"
-    Then I should see "Signed in successfully."
 
   Scenario: Article List
     Given I have articles titled Meepo, Chen

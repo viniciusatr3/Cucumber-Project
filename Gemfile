@@ -22,12 +22,16 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'devise'
 
-gem 'database_cleaner'
-gem 'cucumber-rails'
-gem 'cucumber'
-gem 'rspec-rails'
-gem 'webrat'
-gem 'rspec'
+group :development, :test do
+  gem 'rspec'
+  gem 'webrat'
+  gem "rspec-rails", ">= 2.0.1"
+  gem 'cucumber'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner', '<= 1.0.1'
+  gem 'selenium-webdriver'
+end
+
 gem 'spork'
 gem 'launchy'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
