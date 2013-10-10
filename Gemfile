@@ -21,6 +21,7 @@ gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'devise'
+gem 'protected_attributes'
 
 group :development, :test do
   gem 'rspec'

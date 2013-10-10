@@ -3,3 +3,7 @@ Given /^I have articles titled (.+)$/ do |titles|
     Article.create!(:title => title)
   end
 end
+
+Then /^I should see javascript and press OK$/ do
+	page.driver.browser.switch_to.alert.accept
+end
